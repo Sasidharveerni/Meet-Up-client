@@ -8,7 +8,7 @@ function DeleteUser({fetchUsers, id}) {
   const deleteUsers = async (e) => {
     try {
       e.preventDefault();
-      await axios.delete(`http://localhost:5000/users/${id}`)
+      await axios.delete(`https://meet-up-server.onrender.com/users/${id}`)
       fetchUsers();
     } catch (error) {
       alert('There is an error in deleting users !');

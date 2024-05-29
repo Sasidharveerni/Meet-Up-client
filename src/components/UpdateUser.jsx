@@ -18,7 +18,7 @@ function UpdateUser({fetchUsers, id}) {
   const updateUsers = async (e) => {
     try {
       e.preventDefault();
-      await axios.patch(`http://localhost:5000/users/${id}`, {
+      await axios.patch(`https://meet-up-server.onrender.com/users/${id}`, {
         name,
         email,
         age,

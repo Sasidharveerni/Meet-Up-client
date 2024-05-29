@@ -19,7 +19,7 @@ function App() {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/users') 
+      const res = await axios.get('https://meet-up-server.onrender.com/users') 
       setUsers(res.data.data);
     } catch (error) {
       alert('There is an error in fetching users')

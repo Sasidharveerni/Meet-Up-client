@@ -18,7 +18,7 @@ function AddUser({fetchUsers}) {
   const createUsers = async (e) => {
     try {
       e.preventDefault();
-      await axios.post('http://localhost:5000/users', {
+      await axios.post('https://meet-up-server.onrender.com/users', {
         name,
         email,
         age,
